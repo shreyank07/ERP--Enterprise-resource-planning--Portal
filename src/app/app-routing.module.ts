@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'page1',
+    loadChildren: () => import('./page1/page1.module').then( m => m.Page1PageModule)
+  },
+  {
+    path: 'homepage',
+    loadChildren: () => import('./homepage/homepage.module').then( m => m.HomepagePageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'updateprofile',
+    loadChildren: () => import('./updateprofile/updateprofile.module').then( m => m.UpdateprofilePageModule)
+  },
+  {
+    path: 'completeprofile',
+    loadChildren: () => import('./completeprofile/completeprofile.module').then( m => m.CompleteprofilePageModule)
+  },
 ];
 
 @NgModule({

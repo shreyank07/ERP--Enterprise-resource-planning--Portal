@@ -1,0 +1,106 @@
+input[type=text], input[type=password] {
+    width: 100%;
+    color: black;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+button:hover {
+opacity: 0.8;
+}
+
+
+.text {
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+color: white;
+font-weight: bold;
+border: 3px solid #f1f1f1;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+width: 40%;
+padding: 20px;
+text-align: center;
+
+}
+
+.imgContainer{
+position: relative;
+height: 200px;
+padding: 0%;
+}
+.imgContainer .btn {
+position: absolute;
+top: 100%;
+left: 50%;
+width: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+background-color: #f1f1f1;
+color: black;
+font-size: 16px;
+padding: 16px 30px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+text-align: center;
+}
+
+.imgContainer .btn:hover {
+background-color: black;
+color: white;
+}
+.imgContainer .btn2 {
+position: absolute;
+top: 100%;
+left: 50%;
+width: 100%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+background-color: #d39d9d;
+color: black;
+font-size: 16px;
+padding: 2px 15px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+text-align: center;
+}
+
+.imgContainer .btn2:hover {
+background-color: rgb(197, 135, 135);
+color: white;
+}
+.slide_left:hover {
+box-shadow: inset 0 0 0 50px #9ee2a2;
+}
+.button_slide {
+color: #FFF;
+border: 2px solid rgb(138, 238, 196);
+border-radius: 0px;
+padding: 10px 40px;
+display: inline-block;
+font-family: "Lucida Console", Monaco, monospace;
+font-size: 16px;
+width: 100%;
+letter-spacing: 1px;
+cursor: pointer;
+box-shadow: inset 0 0 0 0 #747273;
+-webkit-transition: ease-out 0.4s;
+-moz-transition: ease-out 0.4s;
+transition: ease-out 0.4s;
+}
