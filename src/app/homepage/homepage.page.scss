@@ -49,6 +49,7 @@
   z-index: 2;
   width: 80%;
   padding: 25px;
+  padding-bottom: 5%;
   text-align: center;
   
   }
@@ -81,14 +82,15 @@ h1{
     font-weight: bold;
     letter-spacing: 1px;
 }
-input[type=text], input[type=password] {
+input[type=text], input[type=password],input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    color: black;
+    color: rgb(96, 89, 185);
+    font-weight: bolder;
   }
   
   /* Set a style for all buttons */

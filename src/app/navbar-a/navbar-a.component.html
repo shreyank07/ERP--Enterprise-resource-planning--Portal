@@ -1,0 +1,51 @@
+<div class="container-fluid" style="background-color: rgb(130, 175, 233)" >
+  <nav class="navbar navbar-expand-lg  box-shadow" style="background-color:  rgb(130, 175, 233)">
+    <a class="logo link" style="font-size: 40px; color: rgb(15, 14, 14); font-style: oblique;" href="#"><strong><u>ADMIN</u></strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active link">
+          <nav><a routerLink="/homepage" routerLinlActive="active" class="nav-link" style="color:white" >HOME </a></nav>
+        </li>
+        <li class="nav-item link">
+          <nav><a routerLink="/viewprofile" routerLinlActive="active" class="nav-link" style="color: white;">FACULTY PROFILE</a></nav>
+        </li>
+        <li class="nav-item link">
+            <a class="nav-link"routerLink="/LEAVES" routerLinlActive="active" style="color:white"href="#">LEAVE APPLICATIONS</a>
+          </li>
+        
+        <li class="nav-item link">
+          <a class="nav-link" style="color: white"routerLink="/register" routerLinlActive="active" href="#">RESISTER USER</a>
+        </li>
+        <li class="nav-item linK">
+          <div class="dropdown">
+            <div onclick="myFunction()" class="nav-link" style="color: white">ADD <div class="triangle-down"></div></div>
+            <a id="myDropdown" class="dropdown-content">
+              <a href="#">Acheivements</a>
+              <a href="#">Certification</a>
+              <a href="#">Paper Published</a>
+            </a>
+          </div>
+        </li>
+       
+        <li class="nav-item link">
+            <a class="nav-link" (click)="logout()" routerLink="/homepage" routerLinlActive="active" style="color: white;" href="#">LOGOUT</a>
+          </li>
+      </ul>
+      <div class="topnav">
+        <input type="text" placeholder="Search..">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+      
+      
+      
+    </div>
+  </nav>
+</div>
+
+  
+
+

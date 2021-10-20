@@ -31,6 +31,14 @@ const routes: Routes = [
     path: 'completeprofile',
     loadChildren: () => import('./completeprofile/completeprofile.module').then( m => m.CompleteprofilePageModule)
   },
+  {
+    path: 'profiletemplate',
+    loadChildren: () => import('./profiletemplate/profiletemplate.module').then( m => m.ProfiletemplatePageModule)
+  },
+  {
+    path: 'viewprofile',
+    loadChildren: () => import('./viewprofile/viewprofile.module').then( m => m.ViewprofilePageModule)
+  },
 ];
 
 @NgModule({

@@ -1,36 +1,37 @@
 <ion-header>
-  
+  <app-navbar-f></app-navbar-f>
 </ion-header>
 
 <ion-content>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-7 " style="background-color:rgb(199, 204, 191)">
-      <h1><u>Profile</u></h1>
+<div class="container-fluid" style="background-color: aliceblue;">
+  <div class="row p-5" style="padding: 50px;">
+    <div class="col-md-7 box-shadow bord " style="background-color:rgb(255, 255, 255)">
+      <h1 class="pt-0 mt-0"><u>Profile</u></h1>
       <label for="name"><b>FULL NAME</b></label>
-      <input type="text"style="" placeholder="Enter Full name" name="name" required><br>
+      <input type="text"style="" placeholder="Enter Full name" name="name" [(ngModel)]="fullname" required><br>
       <label for="number"><b>CONTACT NUMBER 1</b></label>
-      <input type="number" placeholder="Enter contact number1" name="number" required><br>
+      <input type="number" placeholder="Enter contact number1" name="number" [(ngModel)]="contact1" required><br>
       <label for="number"><b>CONTACT NUMBER 2</b></label>
-      <input type="number" placeholder="Enter contact number2" name="number" required><br>
+      <input type="number" placeholder="Enter contact number2" name="number" [(ngModel)]="contact2" required><br>
       <label for="address"><b>RESIDENTIAL ADDRESS</b></label>
-      <input type="address" placeholder="Enter Residential Address" name="address" required><br>
+      <input type="address" placeholder="Enter Residential Address" name="address" [(ngModel)]="address" required><br>
       <label for="department"><b>DEPARTMENT</b></label>
-      <input type="department" placeholder="Enter department" name="department" required><br>
+      <input type="department" placeholder="Enter department" name="department" [(ngModel)]="department" required><br>
       <label for="date"><b>DATE OF BIRTH</b></label>
-      <input type="date" name="begin" placeholder="dd-mm-yyyy" value=""min="1997-01-01" max="2030-12-31"><br>
+      <input type="date" name="begin" placeholder="dd-mm-yyyy" value=""min="1997-01-01" [(ngModel)]="dob" max="2030-12-31"><br>
       <h1><u>Education details</u></h1>
       <label for="Education"><b>QULIFICATION 1</b></label>
-      <input type="text" placeholder="Enter qualification 2" name="education" required><br>
+      <input type="text" placeholder="Enter qualification 2" name="education"[(ngModel)]="qualf1" required><br>
       <label for="Education"><b>QULIFICATION 2</b></label>
-      <input type="text" placeholder="Enter qualification 2" name="education" required><br>
+      <input type="text" placeholder="Enter qualification 2" name="education" [(ngModel)]="qualf2" required><br>
       <label for="Education"><b>QULIFICATION 3</b></label>
-      <input type="text" placeholder="Enter qualification 3" name="education" required><br>
+      <input type="text" placeholder="Enter qualification 3" name="education" [(ngModel)]="qualf3" required><br>
       <h1><u>Past Experience and Job Role</u></h1>
-      <textarea style="width: 95%;"></textarea>
+      <textarea  [(ngModel)]="expandrole" style="width: 95%;"></textarea>
+      <button class="button3 slide_left" (click)="submit()" type="submit">SUBMIT</button>
     </div>
     <div class="col-md-5 ">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQsB3l79Js4_u-Z4kQ8PyyYCo_8QOM8bTdw&usqp=CAU"  style="height: 100%;filter: blur(1.7px);margin-left: 10px;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQsB3l79Js4_u-Z4kQ8PyyYCo_8QOM8bTdw&usqp=CAU" class="bord2"  style="height: 100%;filter: blur(1.7px);margin-left: 10px;">
       <div class="centered"><u>PRIMA FACULTY ERP</u><br>faculty profile image</div>
     </div>
   </div>

@@ -3,18 +3,18 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
-import { RegisterPageRoutingModule } from './register-routing.module';
 import { NavbarAComponent } from '../navbar-a/navbar-a.component';
-import { RegisterPage } from './register.page';
+import { ViewprofilePageRoutingModule } from './viewprofile-routing.module';
+
+import { ViewprofilePage } from './viewprofile.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegisterPageRoutingModule
+    ViewprofilePageRoutingModule
   ],
-  declarations: [RegisterPage,NavbarAComponent]
+  declarations: [ViewprofilePage,NavbarAComponent]
 })
-export class RegisterPageModule {}
+export class ViewprofilePageModule {}

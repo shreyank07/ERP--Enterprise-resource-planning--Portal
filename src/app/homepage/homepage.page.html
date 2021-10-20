@@ -30,13 +30,13 @@
                 </div>
             
                 <div class="container2">
-                  <label for="uname"><b>Username</b></label>
-                  <input type="text" placeholder="Enter Username" name="uname" required>
+                  <label for="email"><b>Email</b></label>
+                  <input type="email" [(ngModel)]="emailA" placeholder="Enter Username" name="uname" required>
             
                   <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  <input type="password" [(ngModel)]="passwordA" placeholder="Enter Password" name="psw" required>
                     
-                  <button class="button3 slide_left" type="submit">LOGIN</button>
+                  <button (click)="loginadmin()" class="button3 slide_left" type="submit">LOGIN</button>
                   <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                   </label>
@@ -48,8 +48,35 @@
                 </div>
               </form>
             </div>
-            <button class="button2 slide_left" onclick="document.getElementById('id01').style.display='block'" st>LOGIN AS FACULTY</button><br>
-            <p class="pt-4">New member?<a href="#" routerLink="/register" routerLinlActive="active">Register here</a></p>
+            <button class="button2 slide_left" onclick="document.getElementById('id02').style.display='block'" st>LOGIN AS FACULTY</button><br>
+            <div id="id02" class="modal">
+  
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer2">
+                  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  
+                </div>
+            
+                <div class="container2">
+                  <label for="email"><b><u>Email</u></b></label>
+                  <input type="email" [(ngModel)]="email" placeholder="Enter registered Email" name="email" required>
+            
+                  <label for="psw"><b><u>Password</u></b></label>
+                  <input type="password" [(ngModel)]="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button (click)="login()" class="button3 slide_left" type="submit">LOGIN</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+            
+                <div class="container2" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw ">Forgot <a class="mt-0" href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+            <!-- <p class="pt-4">New member?<a href="#" routerLink="/register" routerLinlActive="active">Register here</a></p> -->
         </div>
         
     

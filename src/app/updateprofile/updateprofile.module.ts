@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { UpdateprofilePageRoutingModule } from './updateprofile-routing.module';
-
+import { NavbarFComponent } from '../navbar-f/navbar-f.component';
 import { UpdateprofilePage } from './updateprofile.page';
 
 @NgModule({
@@ -15,6 +15,6 @@ import { UpdateprofilePage } from './updateprofile.page';
     IonicModule,
     UpdateprofilePageRoutingModule
   ],
-  declarations: [UpdateprofilePage]
+  declarations: [UpdateprofilePage,NavbarFComponent]
 })
 export class UpdateprofilePageModule {}
