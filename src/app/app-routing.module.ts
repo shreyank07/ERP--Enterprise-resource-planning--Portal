@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'homepage',
     pathMatch: 'full'
   },
   {
@@ -38,6 +38,22 @@ const routes: Routes = [
   {
     path: 'viewprofile',
     loadChildren: () => import('./viewprofile/viewprofile.module').then( m => m.ViewprofilePageModule)
+  },
+  {
+    path: 'leaveapply',
+    loadChildren: () => import('./leaveapply/leaveapply.module').then( m => m.LeaveapplyPageModule)
+  },
+  {
+    path: 'viewleaves',
+    loadChildren: () => import('./viewleaves/viewleaves.module').then( m => m.ViewleavesPageModule)
+  },
+  {
+    path: 'leavehistory',
+    loadChildren: () => import('./leavehistory/leavehistory.module').then( m => m.LeavehistoryPageModule)
+  },
+  {
+    path: 'start',
+    loadChildren: () => import('./start/start.module').then( m => m.StartPageModule)
   },
 ];
 

@@ -1,5 +1,5 @@
-<div class="container-fluid" style="background-color: rgb(130, 175, 233)" >
-  <nav class="navbar navbar-expand-lg  box-shadow" style="background-color:  rgb(130, 175, 233)">
+<div class="container-fluid" style="background-color:  rgb(43, 105, 185)" >
+  <nav class="navbar navbar-expand-lg  box-shadow" style="background-color:  rgb(43, 105, 185)">
     <a class="logo link" style="font-size: 50px; color: rgb(15, 14, 14); font-style: oblique;" href="#"><strong><u>Prima Faculty</u></strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -14,13 +14,15 @@
           <nav><a routerLink="/completeprofile" routerLinlActive="active" class="nav-link" style="color: white;">PROFILE</a></nav>
         </li>
         <li class="nav-item link">
-            <a class="nav-link"routerLink="/places" routerLinlActive="active" style="color:white"href="#">APPLY FOR LEAVE</a>
+            <a class="nav-link"routerLink="/leaveapply" routerLinlActive="active" style="color:white"href="#">APPLY FOR LEAVE</a>
           </li>
-        
+          <li class="nav-item link">
+            <a class="nav-link"routerLink="/leavehistory" routerLinlActive="active" style="color:white"href="#">LEAVE HISTORY</a>
+          </li>
         <li class="nav-item link">
           <a class="nav-link" style="color: white"routerLink="/updateprofile" routerLinlActive="active" href="#">UPDATE</a>
         </li>
-        <li class="nav-item linK">
+        <!-- <li class="nav-item linK">
           <div class="dropdown">
             <div onclick="myFunction()" class="nav-link" style="color: white">ADD <div class="triangle-down"></div></div>
             <a id="myDropdown" class="dropdown-content">
@@ -29,10 +31,10 @@
               <a href="#">Paper Published</a>
             </a>
           </div>
-        </li>
+        </li> -->
        
         <li class="nav-item link">
-            <a class="nav-link" (click)="logout()" routerLink="/homepage" routerLinlActive="active" style="color: white;" href="#">LOGOUT</a>
+            <a class="nav-link" (click)="logout()"  style="color: white;">LOGOUT</a>
           </li>
       </ul>
       <div class="topnav">

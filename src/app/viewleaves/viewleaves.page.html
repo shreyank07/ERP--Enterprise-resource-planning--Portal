@@ -1,0 +1,50 @@
+<ion-header>
+ <app-navbar-a></app-navbar-a>
+</ion-header>
+
+<ion-content style="background-color: aliceblue;">
+  <div class="container-fluid" style="background-color: aliceblue;">
+    <div class="row   ml-0 py-0 px-5 pt-5"  >
+      <div class="col-md-12 mb-3 px-5" style="text-align: center;" *ngFor='let leav of Allleave' [queryParams]="{_id: leav._id }" >
+      <div class="row">
+          
+        <div class="col-md-12 card ">
+          <div class="row " >
+            
+            <div class="col-md-2"><div style="padding-top:28px ;" [(ngModel)]="name"><h1><b>Faculty Name:</b></h1>{{leav.name}}</div></div>
+            <div class="col-md-2">
+              <div style="padding-top:28px" > <h1><b>Faculty Mail:</b></h1>{{leav.Email}}</div>
+            </div>
+            <div class="col-md-4">
+              <div style="padding-top:28px" ><h1><b>Department:</b></h1>{{leav.department}}</div>
+            </div>
+            <!-- <div class="col-md-4">
+              <div style="padding-top:28px" ><s></s> <h3>Reason:</h3>{{leav.breifreason}}</div>
+            </div> -->
+            <div class="col-md-1"><div style="padding-top:28px ;"><h3><b>Date of leave:</b></h3>{{leav.dol}}</div></div>
+            <div class="col-md-1"><div style="padding-top:28px ;"><h3><b>Date of Return:</b></h3>{{leav.dor}}</div></div>
+            <div class="col-md-1"><div style="padding-top:28px ;"><h3><b>Time of leave:</b></h3>{{leav.Ltime}}</div></div>
+            <div class="col-md-1"><div style="padding-top:28px ;"><h3><b>Time of Return:</b></h3>{{leav.Rtimedob}}</div></div>
+          </div>
+          <div class="row mt-5 ">
+            <div class="col-md-2"><div ><h2><b>Reason :</b></h2>{{leav.reason}}</div></div>
+            <div class="col-md-6"><div ><h2><b>Reason :</b></h2>{{leav.breifreason}}</div></div>
+            <div class="col-md-2"><button class="button3 slide_left" style="padding:25px ;" (click)="accept(leav._id)" type="submit">Accept</button></div>
+            <div class="col-md-2"><button class="button2 slide_left2" style="padding:25px ;" (click)="decline(leav._id)" type="decline">Decline</button></div>
+          </div> 
+          <!-- <div class="row">
+            <div class="col-md-6"><div style="padding-top:28px ;"><h3>date of leave:</h3>{{leav.dol}}</div></div>
+            <div class="col-md-6"><div style="padding-top:28px ;"><h3>date of Return:</h3>{{leav.dor}}</div></div>
+          </div> -->
+          <!-- <div class="row">
+            <div class="col-md-6"><div style="padding-top:28px ;"><h3>Time of leave:</h3>{{leav.Ltime}}</div></div>
+            <div class="col-md-6"><div style="padding-top:28px ;"><h3>time of Return:</h3>{{leav.Rtimedob}}</div></div>
+          </div> -->
+        </div> 
+      </div>
+     </div>
+       
+      </div>
+  </div>
+  <app-footer></app-footer>
+</ion-content>

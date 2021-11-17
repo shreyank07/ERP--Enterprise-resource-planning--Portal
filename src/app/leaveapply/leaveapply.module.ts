@@ -4,19 +4,18 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { UpdateprofilePageRoutingModule } from './updateprofile-routing.module';
+import { LeaveapplyPageRoutingModule } from './leaveapply-routing.module';
 import { NavbarFComponent } from '../navbar-f/navbar-f.component';
 import {FooterComponent} from '../footer/footer.component';
-import { UpdateprofilePage } from './updateprofile.page';
+import { LeaveapplyPage } from './leaveapply.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    UpdateprofilePageRoutingModule
+    LeaveapplyPageRoutingModule
   ],
-  declarations: [UpdateprofilePage,NavbarFComponent,FooterComponent]
+  declarations: [LeaveapplyPage,NavbarFComponent,FooterComponent]
 })
-export class UpdateprofilePageModule {}
- 
+export class LeaveapplyPageModule {}

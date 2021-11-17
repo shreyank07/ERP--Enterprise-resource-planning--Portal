@@ -10,7 +10,7 @@
         <div class="row" >
       
             <div class="col-md-12">
-              <label class="bg-primary text-center" style="width: 100%;height: 10%;font-size: 25px;"><strong>REGISTER AT PRIMA ERP</strong></label><BR>
+              <label class="bg-primary text-center" style="width: 100%;height: 10%;font-size: 25px;"><strong>REGISTER A FACULTY PRIMA ERP</strong></label><BR>
                 <label for="name"><b>Full name</b></label>
                 <input type="text" [(ngModel)]="firstname"placeholder="Full name" name="name" required>
                
@@ -21,7 +21,7 @@
                 <input type="password" [(ngModel)]="password" placeholder="Enter Password" name="psw" required>
           
                 
-                <div (click)=" register()" class="button_slide slide_left">Sign Up</div>
+                <div   (click)=" register()" class="button_slide slide_left"><a href = 'mailto:ladekarsm@rknec.edu?body="Yourbody"&subject="a subject".com'>Sign Up</a></div>
                 <label>
                   <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
                 </label>
@@ -31,4 +31,5 @@
           </div>
     </div>  
   </div>
+  <app-footer></app-footer>
 </ion-content>

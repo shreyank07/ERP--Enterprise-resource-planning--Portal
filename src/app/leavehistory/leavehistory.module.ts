@@ -3,20 +3,18 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
-import { UpdateprofilePageRoutingModule } from './updateprofile-routing.module';
 import { NavbarFComponent } from '../navbar-f/navbar-f.component';
+import { LeavehistoryPageRoutingModule } from './leavehistory-routing.module';
 import {FooterComponent} from '../footer/footer.component';
-import { UpdateprofilePage } from './updateprofile.page';
+import { LeavehistoryPage } from './leavehistory.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    UpdateprofilePageRoutingModule
+    LeavehistoryPageRoutingModule
   ],
-  declarations: [UpdateprofilePage,NavbarFComponent,FooterComponent]
+  declarations: [LeavehistoryPage,NavbarFComponent,FooterComponent]
 })
-export class UpdateprofilePageModule {}
- 
+export class LeavehistoryPageModule {}

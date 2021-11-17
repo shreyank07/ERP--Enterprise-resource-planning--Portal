@@ -3,29 +3,35 @@
 </ion-header>
 
 <ion-content>
-  <div class="row   ml-0 py-0 px-5 pt-5"  >
-    <div class="col-md-6 mb-3 px-5" style="text-align: center;" *ngFor='let prof of profile' routerLink="/profiletemplate"  [queryParams]="{_id: prof._id }" >
+  <div class="row   ml-0 py-0 px-5 pt-5" style="background-color: aliceblue;">
+    <div class="col-md-6 mb-3 px-5" style="text-align: center;" *ngFor='let prof of profile'  routerLink="/profiletemplate" [queryParams]="{_id: prof._id }" >
     <div class="row">
         
       <div class="col-md-12 card ">
         <div class="row " style="height: 270px; text-align: center;width: 100%;">
           <div class="col-md-3 pt-3">
-            <img src="{{prof.picture}}" style="height: 220px;width: 99%;display: block; object-fit: cover; padding-left: 5px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvxg0chV2I5KAJXiA5_85VpSCeMwaiQe0CA&usqp=CAU" style="height: 220px;width: 99%;display: block; object-fit: cover; padding-left: 5px;">
             <p style="color: rgb(190, 190, 190);">Prima faculty</p>
           </div>
           <div class="col-md-3"><div style="padding-top:28px ;"><h3>faculty Name:</h3>{{prof.name}}</div></div>
           <div class="col-md-3">
-            <div style="padding-top:28px" ><b> <h3>Department:</h3> {{prof.contact1}}</b></div>
+            <div style="padding-top:28px" ><b> <h3>Contact:</h3> {{prof.contact1}}</b></div>
           </div>
           <div class="col-md-3">
-            <div style="padding-top:28px" ><s></s><b>  <h3>Address:</h3>{{prof.address}}</b></div>
+            <div style="padding-top:28px" ><s></s><b>  <h3>Address:</h3>{{prof.address}}</b></div><br>
+            <button class="button3 slide_left mt-3"  (click)="submit()" type="submit">VIEW FULL PROFILE</button>
           </div>
+          
+            
+          
         </div> 
+        
       </div> 
     </div>
+    
    </div>
      
     </div>
-  
+    <app-footer></app-footer>
 </ion-content>
 <!-- [queryParams]="{_id: prod._id }" -->

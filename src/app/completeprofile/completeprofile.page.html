@@ -4,15 +4,15 @@
 
 <ion-content>
 <div class="container-fluid" style="background-color: aliceblue;">
-  <div class="row p-5" style="padding: 50px;">
-    <div class="col-md-7 box-shadow bord " style="background-color:rgb(255, 255, 255)">
+  <div class="row p-5 " style="padding: 50px;">
+    <div class="col-md-7 box-shadow bord  " style="background-color:rgb(255, 255, 255)">
       <h1 class="pt-0 mt-0"><u>Profile</u></h1>
       <label for="name"><b>FULL NAME</b></label>
       <input type="text"style="" placeholder="Enter Full name" name="name" [(ngModel)]="fullname" required><br>
       <label for="number"><b>CONTACT NUMBER 1</b></label>
       <input type="number" placeholder="Enter contact number1" name="number" [(ngModel)]="contact1" required><br>
-      <label for="number"><b>CONTACT NUMBER 2</b></label>
-      <input type="number" placeholder="Enter contact number2" name="number" [(ngModel)]="contact2" required><br>
+      <label for="name"><b>YOUR MAIL</b></label>
+      <input type="mail"style="" placeholder="Enter Mail Id" name="mail" [(ngModel)]="mail" required><br>
       <label for="address"><b>RESIDENTIAL ADDRESS</b></label>
       <input type="address" placeholder="Enter Residential Address" name="address" [(ngModel)]="address" required><br>
       <label for="department"><b>DEPARTMENT</b></label>
@@ -26,15 +26,29 @@
       <input type="text" placeholder="Enter qualification 2" name="education" [(ngModel)]="qualf2" required><br>
       <label for="Education"><b>QULIFICATION 3</b></label>
       <input type="text" placeholder="Enter qualification 3" name="education" [(ngModel)]="qualf3" required><br>
-      <h1><u>Past Experience and Job Role</u></h1>
-      <textarea  [(ngModel)]="expandrole" style="width: 95%;"></textarea>
-      <button class="button3 slide_left" (click)="submit()" type="submit">SUBMIT</button>
+     
     </div>
-    <div class="col-md-5 ">
+    <div class="col-md-5 box-shadow bord" style="padding: 2%;background-color:rgb(255, 255, 255)">
+      <div class="row pt-5">
+        <label for="name"><b>ACHEIVEMENTS</b></label>
+        <input type="text" id="myfile" placeholder="Mention notable acheivements" name="link" multiple [(ngModel)]="acheivements">
+        <label for="certify"><b>CERTIFICATION</b></label>
+        <input type="text" placeholder="Upload Drive link of certificates in one pdf" name="certificate" [(ngModel)]="certify" required><br>
+        <!-- <label for="name" class="pt-0 mt-0"><b>CERTIFICATIONS</b></label><br>
+        <input type="text" placeholder="*Drive link of certificates of acheivements combined in one pdf" name="link"  [(ngModel)]="certificate"> -->
+        <label for="name"><b>PAPER PUBLISHED</b></label>
+        <input type="text" id="myfile" placeholder="*Mention/list your published papers " name="link" [(ngModel)]="papers" >
+        <h1><u>Past Experience and Job Role</u></h1>
+        <textarea  [(ngModel)]="expandrole"  style="width: 100%; height: 50%;" rows="10"></textarea>
+        <button class="button3 slide_left mt-3" (click)="submit()" type="submit">SUBMIT</button>
+      </div>
+      <!-- <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQsB3l79Js4_u-Z4kQ8PyyYCo_8QOM8bTdw&usqp=CAU" download>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQsB3l79Js4_u-Z4kQ8PyyYCo_8QOM8bTdw&usqp=CAU" class="bord2"  style="height: 100%;filter: blur(1.7px);margin-left: 10px;">
       <div class="centered"><u>PRIMA FACULTY ERP</u><br>faculty profile image</div>
+    </a> -->
     </div>
   </div>
   
 </div>
+<app-footer></app-footer>
 </ion-content>

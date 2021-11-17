@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar-a',
   templateUrl: './navbar-a.component.html',
@@ -7,8 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarAComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    
+  }
+  logout(){
+    var r= confirm('confirm logout')
+    if ( r==true){
+      this.router.navigate(['/homepage']);
+    }else{
+      
+     }
+  
+  }
 
 }

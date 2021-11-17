@@ -1,0 +1,56 @@
+<ion-header>
+  <app-navbar-f></app-navbar-f>
+</ion-header>
+
+<ion-content>
+  <div class="container-fluid mb-0 pb-0" style="background-color: aliceblue;height: 100%;">
+    <div class="row p-5 " style="padding: 50px;">
+      <div class="col-md-7 box-shadow bord example2 " style="background-color:rgb(255, 255, 255)">
+        <h1 class="pt-0 mt-0"><u>Faculty Leave Request Form</u></h1>
+        <hr class="solid">
+        <p style="color: gray;">Please fill in this form with all the required information. Admin will contact you shortly after the leave request has been approved by your supervisor.</p>
+        <label for="name"><b>Faculty Name</b></label>
+        <input type="text"style="" placeholder="Enter Full name" name="name" [(ngModel)]="fullname" required><br>
+        <label for="mail"><b>Email ID</b></label>  
+        <input type="mail"style="" placeholder="*Should be same as your login mail*" name="mail" [(ngModel)]="Email" required><br>
+        <label for="department"><b>Department</b></label>
+        <input type="department" placeholder="Enter department" name="department" [(ngModel)]="department" required><br>
+        
+        <label for="date"><b>Leave Date</b></label>
+        <input type="date" name="begin" placeholder="dd-mm-yyyy" value=""min="1997-01-01" [(ngModel)]="dol" max="2030-12-31"><br>
+        <label for="name"><b>Leave time:</b></label>
+        <input type="time" id="appt" name="appt" [(ngModel)]="Ltime">
+        <label for="date"><b>Return Date</b></label>
+        <input type="date" name="begin" placeholder="dd-mm-yyyy" value=""min="1997-01-01" [(ngModel)]="dor" max="2030-12-31"><br>
+        <label for="name"><b>Return time:</b></label>
+        <input type="time" id="appt" name="appt" [(ngModel)]="Rtime">
+       
+        
+      </div>
+      <div class="col-md-5 bord example2 "style="background-color:rgb(255, 255, 255)">
+        
+        <form action="/action_page.php" class="pt-5">
+          <hr class="solid ">
+          <label for="name" ><b>leave reason:</b></label>
+          <select type="drop"id="cars" aria-placeholder="Mention the reason" name="cars" [(ngModel)]="reason">
+            <option value="vacation">vacation</option>
+            <option value="Sick">Sick-self</option>
+            <option value="Workers">Workers comp</option>
+            <option value="leave of Absense">leave of Absense</option>
+            <option value="Jury Duty">Jury Duty</option>
+            <option value="Sick-Family">Sick-Family</option>
+            <option value="Doctor Appointment">Doctor Appointment</option>
+            <option value="Funeral">Funeral</option>
+            <option value="Military">Military</option>
+            <option value="Other:">Other:</option>
+          </select>
+        </form>
+        <h2><u>Leave Reason in brief</u></h2>
+        <textarea  placeholder="Enter the reason in brief: Make sure that is explains the whole reason" [(ngModel)]="breifreason" style="width: 95%; height: 50%;"></textarea>
+        <button class="button3 slide_left pt-4" (click)="submit()" type="submit">SUBMIT</button>
+      </div>
+    </div>
+    
+  </div>
+  <app-footer></app-footer>
+</ion-content>

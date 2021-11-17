@@ -21,16 +21,16 @@ export class RegisterPage implements OnInit {
     
     this.http.post('http://127.0.0.1:8000/backend/facultyregister',{name:this.firstname,email:this.email,password:this.password}).subscribe((res:any)=>{
       // this.users=res.faculty;
-      if(this.email==res.email){
-        alert('Email already used');
-        location.reload();
+      // if(this.email==res.email){
+      //   alert('Email already used');
+      //   location.reload();
         
-      }
-      else{
-        console.log(this.users,res.message);
+      // }
+      // else{
+        
         alert(res.message);
-        this.router.navigate(['/homepage']);
-      }
+        // this.router.navigate(['/homepage']);
+      // }
       // this.router.navigate(['/register']);
       
       

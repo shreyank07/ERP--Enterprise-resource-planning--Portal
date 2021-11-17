@@ -1,0 +1,49 @@
+<ion-content>
+  <app-navbar-f></app-navbar-f>
+   <div class="container" style="padding-bottom:30px;">
+    <h1 style="text-align: left;padding: 30px;padding-top: 10px; margin-left: 30px; font-weight:900;">ACCEPTED LEAVES</h1>
+       <div class="row" id="myid" *ngFor='let leav of allleaves1'>
+           <div class="col-md-2">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvxg0chV2I5KAJXiA5_85VpSCeMwaiQe0CA&usqp=CAU" style="height: 150px; width: 90%; display: block; object-fit: cover;border: solid black 1px; ">
+           </div>
+           <div class="col-md-5">
+               <div class="row">
+                   <div class="col-md-12" style="font-size: 20px;"  >
+                       <b>{{leav.name}}</b>
+                   </div>
+               </div>
+               <hr>
+               <div class="row pt-3">
+                    <div class="col-md-12">
+                      <b>Date of Leave</b>
+                       <span class="myclass">{{leav.dol}} </span>
+                        <!-- <input type="button" value="BUY AGAIN" class="loginbutton" style="font-weight: bold;"> -->
+                    </div> 
+                </div>
+               <div class="row pt-4">
+                   <div class="col-md-12" id="my">
+                       <b>Date of Return</b>
+                       <span class="myclass">{{leav.dor}} </span>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-2">
+                <div class="row"> 
+                    <span class="myclass1">{{leav.reason}}</span>
+                </div>
+                <div class="row pt-5" style="margin-top:48px;"> 
+                    <span class="myclass3">APPLICATION STATUS</span>
+                </div>
+           </div>
+           <div class="col-md-3">
+               <div class="row">
+                       <span class="myclass2">{{leav.department}}</span>
+               </div>
+               <div class="row pt-5" style="margin-top:25px;">
+                    <span class="myclass5"> :ACCEPTED</span>
+               </div>
+           </div>
+       </div>
+   </div>
+   <app-footer></app-footer>
+</ion-content>

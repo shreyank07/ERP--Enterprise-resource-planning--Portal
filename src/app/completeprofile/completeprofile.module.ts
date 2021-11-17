@@ -6,6 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { CompleteprofilePageRoutingModule } from './completeprofile-routing.module';
 import { NavbarFComponent } from '../navbar-f/navbar-f.component';
+import {FooterComponent} from '../footer/footer.component';
 import { CompleteprofilePage } from './completeprofile.page';
 
 @NgModule({
@@ -15,6 +16,6 @@ import { CompleteprofilePage } from './completeprofile.page';
     IonicModule,
     CompleteprofilePageRoutingModule
   ],
-  declarations: [CompleteprofilePage,NavbarFComponent]
+  declarations: [CompleteprofilePage,NavbarFComponent,FooterComponent]
 })
 export class CompleteprofilePageModule {}

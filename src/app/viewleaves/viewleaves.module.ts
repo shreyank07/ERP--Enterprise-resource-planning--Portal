@@ -3,19 +3,18 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
-import { RegisterPageRoutingModule } from './register-routing.module';
 import { NavbarAComponent } from '../navbar-a/navbar-a.component';
+import { ViewleavesPageRoutingModule } from './viewleaves-routing.module';
 import {FooterComponent} from '../footer/footer.component';
-import { RegisterPage } from './register.page';
+import { ViewleavesPage } from './viewleaves.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegisterPageRoutingModule
+    ViewleavesPageRoutingModule
   ],
-  declarations: [RegisterPage,NavbarAComponent,FooterComponent]
+  declarations: [ViewleavesPage,NavbarAComponent,FooterComponent]
 })
-export class RegisterPageModule {}
+export class ViewleavesPageModule {}

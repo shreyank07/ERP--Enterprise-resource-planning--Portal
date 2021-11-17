@@ -8,7 +8,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomepagePage implements OnInit {
   users=[];
-  constructor(private http: HttpClient,private router:Router) { }
+  constructor(private http: HttpClient,private router:Router) { 
+
+  }
 
   ngOnInit() {
   }
@@ -18,11 +20,13 @@ export class HomepagePage implements OnInit {
   passwordA:any;
   login(){
     this.http.post('http://127.0.0.1:8000/backend/login',{email:this.email,password:this.password}).subscribe((res:any)=>{
+    // localStorage.setItem('email',this.email);
+    localStorage.setItem("mail",this.email);
     console.log(res);
     // localStorage.setItem('token',res.token);
     // localStorage.setItem('myvar','abc');
     // localStorage.setItem('loginstatus',res.status);
-    this.router.navigate(['/completeprofile']); 
+    this.router.navigate(['/updateprofile']); 
     alert(res.message);
      
    },(error:any)=>{
