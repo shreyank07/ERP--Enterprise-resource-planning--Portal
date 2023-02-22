@@ -20,4 +20,8 @@ This  is a full stack web application which uses Angular/Ionic to design fronten
 
 4. Now open frontend folder and  run the project using command: ionic serve.
 
+## Tech Stack For Development
+
+![techstack](https://user-images.githubusercontent.com/85166951/220547339-f5f631bb-4247-4c51-a9da-934880e33604.jpg)
+
 #### Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
