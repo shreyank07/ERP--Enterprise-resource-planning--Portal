@@ -21,7 +21,22 @@ This  is a full stack web application which uses Angular/Ionic to design fronten
 4. Now open frontend folder and  run the project using command: ionic serve.
 
 ## Tech Stack For Development
+<p align="center">
+  <img width="600" height="300" src="https://user-images.githubusercontent.com/85166951/220547339-f5f631bb-4247-4c51-a9da-934880e33604.jpg">
+</p>
+<!-- ![techstack](https://user-images.githubusercontent.com/85166951/220547339-f5f631bb-4247-4c51-a9da-934880e33604.jpg) -->
 
-![techstack](https://user-images.githubusercontent.com/85166951/220547339-f5f631bb-4247-4c51-a9da-934880e33604.jpg)
+## Features And Functionalities
+
+<img align="left" width="500" height="250" src="https://user-images.githubusercontent.com/85166951/220548187-05480286-b652-41bc-b0c9-c10920ec5d04.png">
+
+The Entire portal Includes two sections,mainly:
+
+1.Admin
+
+2.Faculty
+
+Both the section are completely authenticated 
+And the user gets access to further process after the successful authentication 
 
 #### Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
