@@ -40,10 +40,22 @@ Both the section are completely authenticated
 And the user gets access to further process after the successful authentication 
 <br></br>
 <br></br>
-<br></br>
+
 ## Admin Section
-<p>
-<img align="centre" width="1000" height="250" src="https://user-images.githubusercontent.com/85166951/220580718-acef74b4-d43a-4fa8-956d-1e7016f0d93d.jpg">
+<p align="centre">
+<img  width="1000" height="250" src="https://user-images.githubusercontent.com/85166951/220580718-acef74b4-d43a-4fa8-956d-1e7016f0d93d.jpg">
 </p>
+<br></br>
+
+## Faculty section 
+<p>
+<img align="left" width="500" height="250" src="https://user-images.githubusercontent.com/85166951/220583588-047c4cde-3d9e-47de-a4c7-ae8dd3399ac8.png">
+<img align="right" width="500" height="250" src="https://user-images.githubusercontent.com/85166951/220584331-fd544afb-531c-4c46-b0b1-7b14aaddd3b8.png">
+</p>
+
+
+
+
+
 
 ###  Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
