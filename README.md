@@ -21,4 +21,3 @@ This  is a full stack web application which uses Angular/Ionic to design fronten
 4. Now open frontend folder and  run the project using command: ionic serve.
 
 #### Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-![databases](https://user-images.githubusercontent.com/85166951/220545200-1d8a6833-d203-4a8f-9f5c-cc8c7ddd277e.png)
